@@ -4,19 +4,17 @@ class StringBuilder {
         this.#value=initialValue
     }
     getValue() {
-        this.#value 
+      return  this.#value 
     }
     padEnd(str) {
         this.#value += str;
     }
     padStart(str) {
         this.#value = str + this.#value;
-        
-    }
+            }
       padBoth(str) {
     this.#value = str + this.#value + str;
-    
-  }
+      }
 
 }
 const builder = new StringBuilder(".");
